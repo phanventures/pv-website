@@ -441,6 +441,79 @@
       .follow-grid { grid-template-columns: 1fr; }
     }
 
+
+    /* ── PRODUCTS ── */
+    .products-intro {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.75;
+      max-width: 560px;
+      margin: -16px 0 32px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .product-card-tag {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.36);
+    }
+
+    .lab-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.45);
+      margin: 40px 0 16px;
+      display: block;
+    }
+
+    .lab-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 32px;
+    }
+
+    .lab-list li {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.6;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .lab-list li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .lab-list strong {
+      color: rgba(255, 255, 255, 0.92);
+      font-weight: 700;
+    }
+
+    .lab-note {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.45);
+      margin-top: 20px;
+    }
+
+    @media (max-width: 700px) {
+      .products-grid, .lab-list { grid-template-columns: 1fr; }
+    }
+
     /* ── FOOTER ── */
     footer {
       position: relative;
@@ -510,6 +583,7 @@
     <div class="nav-links">
       <a href="#why">About</a>
       <a href="#ventures">Ventures</a>
+      <a href="#products">Products</a>
       <a href="mailto:anh@phanventures.com">Contact</a>
     </div>
   </nav>
@@ -654,6 +728,38 @@
 
       <hr class="rule">
 
+      <!-- PRODUCTS -->
+      <div class="section" id="products">
+        <span class="section-label">The Products</span>
+        <p class="products-intro">Running communities taught me what small operators actually need. So I started building the tools. Each one began as something I needed for my own businesses first.</p>
+        <div class="products-grid">
+          <a href="https://tidyloon.com" target="_blank" rel="noopener" class="follow-card">
+            <div class="product-card-tag">Live &nbsp;·&nbsp; Home Services</div>
+            <div class="follow-card-name" style="color: #6EE7B7;">Tidy Loon</div>
+            <div class="follow-card-desc">Twin Cities home cleaning, booked in minutes. We own the customer experience and pair you with a vetted, insured local provider.</div>
+            <div class="follow-card-cta">tidyloon.com ↗</div>
+          </a>
+          <a href="https://cashlucent.com" target="_blank" rel="noopener" class="follow-card">
+            <div class="product-card-tag">Live &nbsp;·&nbsp; Finance</div>
+            <div class="follow-card-name" style="color: #7DD3FC;">Cashlucent</div>
+            <div class="follow-card-desc">Zero-based budgeting for people running more than one business. Every dollar gets a job, across every entity, in one place.</div>
+            <div class="follow-card-cta">cashlucent.com ↗</div>
+          </a>
+        </div>
+
+        <span class="lab-label">In the Lab</span>
+        <ul class="lab-list">
+          <li><strong>OtterFront</strong> · a CRM and booking engine for small service businesses.</li>
+          <li><strong>Reelucent</strong> · a content hub that turns one filming session into a week of posts.</li>
+          <li><strong>Zorapilot</strong> · a local-first chief of staff that reads everything before you wake up.</li>
+          <li><strong>Brayvo</strong> · a speaking coach in your pocket, with a donkey who won't let you off easy.</li>
+          <li><strong>LevelUp Sketch</strong> · a drawing journal for iPad that makes daily practice feel like a quest.</li>
+        </ul>
+        <p class="lab-note">Lab projects graduate to the list above the day a stranger can sign up and pay. Not before.</p>
+      </div>
+
+      <hr class="rule">
+
       <!-- ABOUT -->
       <div class="section" id="about">
         <span class="section-label">Who's Behind This</span>
@@ -664,7 +770,7 @@
           <div class="fact-row-inline">
             <div class="fact-inline">
               <div class="fact-inline-num">3</div>
-              <div class="fact-inline-label">Ventures operating</div>
+              <div class="fact-inline-label">Communities running</div>
             </div>
             <div class="fact-inline">
               <div class="fact-inline-num">16+</div>
@@ -717,6 +823,8 @@
         <a href="https://mranhphan.com" target="_blank" rel="noopener">Mr. Anh Phan</a>
         <a href="https://minnesotadodgeball.com" target="_blank" rel="noopener">Minnesota Dodgeball</a>
         <a href="https://alwaysfunday.com" target="_blank" rel="noopener">Always Funday</a>
+        <a href="https://tidyloon.com" target="_blank" rel="noopener">Tidy Loon</a>
+        <a href="https://cashlucent.com" target="_blank" rel="noopener">Cashlucent</a>
       </div>
       <div class="footer-copy">&copy; 2026 Phan Ventures LLC</div>
     </div>
