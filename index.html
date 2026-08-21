@@ -37,7 +37,7 @@
       content: '';
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.38);
+      background: rgba(0, 0, 0, 0.52);
       pointer-events: none;
       z-index: 0;
     }
@@ -55,18 +55,19 @@
       justify-content: space-between;
       padding: 0 56px;
       height: 64px;
-      background: rgba(0, 0, 0, 0.28);
+      background: rgba(0, 0, 0, 0.42);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .nav-logo {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 900;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: rgba(255, 255, 255, 0.85);
+      white-space: nowrap;
     }
 
     .nav-links {
@@ -76,9 +77,9 @@
     }
 
     .nav-links a {
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 500;
-      color: rgba(255, 255, 255, 0.75);
+      color: rgba(255, 255, 255, 0.88);
       transition: color 0.2s;
     }
 
@@ -101,12 +102,13 @@
       font-weight: 700;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.74);
       margin-bottom: 36px;
     }
 
     .hero h1 {
-      font-size: clamp(54px, 9vw, 96px);
+      font-size: clamp(40px, 9vw, 96px);
+      overflow-wrap: anywhere;
       font-weight: 900;
       letter-spacing: -0.04em;
       line-height: 0.96;
@@ -136,11 +138,11 @@
     }
 
     .section-label {
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.55);
+      color: rgba(255, 255, 255, 0.74);
       margin-bottom: 40px;
       display: block;
     }
@@ -173,9 +175,9 @@
     }
 
     .pillar-mark {
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 800;
-      color: rgba(255, 255, 255, 0.22);
+      color: rgba(255, 255, 255, 0.45);
       letter-spacing: 0.06em;
       min-width: 20px;
       padding-top: 3px;
@@ -183,7 +185,7 @@
 
     .pillar-text strong {
       display: block;
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 800;
       color: rgba(255, 255, 255, 0.88);
       letter-spacing: -0.01em;
@@ -192,7 +194,7 @@
 
     .pillar-text span {
       font-size: 14px;
-      color: rgba(255, 255, 255, 0.82);
+      color: rgba(255, 255, 255, 0.88);
       line-height: 1.65;
     }
 
@@ -233,9 +235,9 @@
     .venture-trigger:hover { opacity: 0.85; }
 
     .venture-num {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 800;
-      color: rgba(255, 255, 255, 0.22);
+      color: rgba(255, 255, 255, 0.45);
       letter-spacing: 0.04em;
       min-width: 28px;
     }
@@ -255,7 +257,7 @@
 
     .venture-arrow {
       font-size: 18px;
-      color: rgba(255, 255, 255, 0.28);
+      color: rgba(255, 255, 255, 0.45);
       transition: transform 0.3s ease;
       flex-shrink: 0;
     }
@@ -283,16 +285,16 @@
     }
 
     .venture-type {
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.36);
+      color: rgba(255, 255, 255, 0.68);
     }
 
     .venture-desc {
-      font-size: 15px;
-      color: rgba(255, 255, 255, 0.82);
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.88);
       line-height: 1.75;
       max-width: 480px;
     }
@@ -301,9 +303,9 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 700;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.68);
       border-bottom: 1px solid rgba(255, 255, 255, 0.18);
       padding-bottom: 2px;
       width: fit-content;
@@ -312,7 +314,7 @@
 
     .venture-link:hover {
       color: #fff;
-      border-color: rgba(255, 255, 255, 0.5);
+      border-color: rgba(255, 255, 255, 0.68);
     }
 
     .venture-links {
@@ -331,14 +333,14 @@
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.15);
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.74);
       transition: background 0.2s, color 0.2s, border-color 0.2s;
       flex-shrink: 0;
     }
 
     .social-icon:hover {
       background: rgba(255, 255, 255, 0.2);
-      border-color: rgba(255, 255, 255, 0.35);
+      border-color: rgba(255, 255, 255, 0.68);
       color: #fff;
     }
 
@@ -388,8 +390,8 @@
     }
 
     .fact-inline-label {
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.42);
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.68);
       font-weight: 500;
     }
 
@@ -413,27 +415,27 @@
 
     .follow-card:hover {
       background: rgba(255, 255, 255, 0.09);
-      border-color: rgba(255, 255, 255, 0.22);
+      border-color: rgba(255, 255, 255, 0.45);
     }
 
     .follow-card-name {
-      font-size: clamp(13px, 1.6vw, 17px);
+      font-size: clamp(16px, 1.6vw, 18px);
       font-weight: 900;
       letter-spacing: -0.02em;
       white-space: nowrap;
     }
 
     .follow-card-desc {
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.72);
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.88);
       line-height: 1.65;
       flex: 1;
     }
 
     .follow-card-cta {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 700;
-      color: rgba(255, 255, 255, 0.45);
+      color: rgba(255, 255, 255, 0.68);
       margin-top: 4px;
     }
 
@@ -444,8 +446,8 @@
 
     /* ── PRODUCTS ── */
     .products-intro {
-      font-size: 15px;
-      color: rgba(255, 255, 255, 0.72);
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.88);
       line-height: 1.75;
       max-width: 560px;
       margin: -16px 0 32px;
@@ -459,19 +461,19 @@
 
     .product-card-tag {
       white-space: nowrap;
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.36);
+      color: rgba(255, 255, 255, 0.68);
     }
 
     .lab-label {
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.45);
+      color: rgba(255, 255, 255, 0.68);
       margin: 40px 0 16px;
       display: block;
     }
@@ -487,7 +489,7 @@
 
     .lab-list li {
       font-size: 14px;
-      color: rgba(255, 255, 255, 0.72);
+      color: rgba(255, 255, 255, 0.88);
       line-height: 1.6;
       padding-left: 16px;
       position: relative;
@@ -497,7 +499,7 @@
       content: "·";
       position: absolute;
       left: 0;
-      color: rgba(255, 255, 255, 0.4);
+      color: rgba(255, 255, 255, 0.68);
     }
 
     .lab-list strong {
@@ -506,8 +508,8 @@
     }
 
     .lab-note {
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.45);
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.68);
       margin-top: 20px;
     }
 
@@ -539,7 +541,7 @@
       font-weight: 900;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.74);
     }
 
     .footer-links {
@@ -549,8 +551,8 @@
     }
 
     .footer-links a {
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.74);
       font-weight: 500;
       transition: color 0.2s;
     }
@@ -558,8 +560,8 @@
     .footer-links a:hover { color: rgba(255, 255, 255, 0.9); }
 
     .footer-copy {
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.74);
     }
 
     /* ── RESPONSIVE ── */
@@ -570,9 +572,11 @@
       .section { padding: 52px 0; }
       .venture-body { padding-left: 0; }
       .footer-col { padding: 0 24px; flex-direction: column; align-items: flex-start; gap: 16px; }
-      .nav-links { gap: 16px; }
+      nav { gap: 16px; }
+      .nav-logo { font-size: 12px; letter-spacing: 0.08em; }
+      .nav-links { gap: 12px; }
       .nav-links a { font-size: 12px; }
-      .hero-eyebrow { font-size: 10px; letter-spacing: 0.1em; white-space: nowrap; }
+      .hero-eyebrow { font-size: 11px; letter-spacing: 0.1em; white-space: normal; line-height: 1.8; }
     }
   </style>
 </head>
